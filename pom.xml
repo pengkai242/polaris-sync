@@ -4,13 +4,14 @@
         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <modules>
-        <module>polaris-sync-registry-core</module>
+        <module>polaris-sync-core</module>
         <module>polaris-sync-registry-plugins</module>
         <module>polaris-sync-protobuf</module>
         <module>polaris-sync-extension</module>
         <module>polaris-sync-server</module>
         <module>polaris-sync-commons</module>
         <module>polaris-sync-reporter-plugins</module>
+        <module>polaris-sync-taskconfig-plugins</module>
         <module>polaris-sync-config-plugins</module>
     </modules>
 
@@ -56,7 +57,7 @@
         <spring.boot.version>2.6.10</spring.boot.version>
         <!-- Spring Framework -->
         <spring.framework.version>5.3.22</spring.framework.version>
-        <polaris.java.version>1.8.0-SNAPSHOT</polaris.java.version>
+        <polaris.java.version>1.8.0</polaris.java.version>
         <skip.maven.deploy>false</skip.maven.deploy>
         <jacoco.version>0.8.8</jacoco.version>
         <maven.jar.plugin.version>3.0.0</maven.jar.plugin.version>
