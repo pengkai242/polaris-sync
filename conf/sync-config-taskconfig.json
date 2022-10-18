@@ -1,0 +1,67 @@
+{
+  "tasks": [
+    {
+      "name": "ins-30b77516",
+      "enable": true,
+      "source": {
+        "name": "ins-30b77516",
+        "type": "nacos",
+        "product_name": "nacos(ins-30b77516)",
+        "addresses": [
+          "183.47.109.126:8848"
+        ]
+      },
+      "destination": {
+        "name": "ins-e14010c7",
+        "type": "nacos",
+        "product_name": "nacos(ins-e14010c7)",
+        "addresses": [
+          "183.47.101.67:8848"
+        ]
+      },
+      "match": [
+        {
+          "namespace": "public",
+          "service": "DEFAULT_GROUP__nacos.pk.104",
+          "groups": [
+            {
+              "name": "version-1",
+              "metadata": {
+                "version": "1.0.0"
+              }
+            },
+            {
+              "name": "version-2",
+              "metadata": {
+                "version": "2.0.0"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "methods": [
+    {
+      "type": "watch",
+      "enable": true
+    },
+    {
+      "type": "pull",
+      "enable": true,
+      "interval": "60s"
+    }
+  ],
+  "health_check": {
+    "enable": true
+  },
+  "report": {
+    "interval" : "1m",
+    "targets": [
+      {
+        "type": "file",
+        "enable": true
+      }
+    ]
+  }
+}
